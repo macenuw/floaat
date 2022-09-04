@@ -1,0 +1,64 @@
+.footer {
+  background-color: #18021A;
+  height: calc(100vh - 600px);
+  min-height: 200px;
+  transition: .5s;
+
+  &:hover {
+    background-color: rgba(210, 19, 42, 1);
+
+    .footer__span::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__content {
+    padding: 50px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__span {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 34px;
+      height: 33px;
+      position: absolute;
+      background-image: url('../images/decor/arrow.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: -35px;
+      top: 0;
+      transition: .3s;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date,
+  &__made {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}

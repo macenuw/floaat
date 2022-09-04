@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Archivo-Bold.woff') format('woff'),
+    url('../fonts/Archivo-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArchivoBlack";
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/ArchivoBlack-Regular.woff') format('woff'),
+    url('../fonts/ArchivoBlack-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Archivo-Regular.woff') format('woff'),
+    url('../fonts/Archivo-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/Archivo-Medium.woff') format('woff'),
+    url('../fonts/Archivo-Medium.woff2') format('woff2');
+  font-display: swap;
+}

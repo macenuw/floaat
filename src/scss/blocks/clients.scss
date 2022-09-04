@@ -1,0 +1,124 @@
+.clients {
+  position: relative;
+  background-color: #FFECEE;
+  padding: 70px 0;
+  z-index: 10;
+  overflow: hidden;
+
+  .header__btn {
+    color: black;
+  }
+
+  &__content {
+    display: flex;
+
+    @media (max-width:992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    padding-top: 70px;
+    margin-right: 131px;
+
+    @media (max-width:992px) {
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'ArchivoBlack';
+    text-transform: uppercase;
+    color: #383030;
+    margin-bottom: 22px;
+
+    @media (max-width:992px) {
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #643C5A;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    max-width: 323px;
+    margin-bottom: 23px;
+
+    @media (max-width:992px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    font-family: 'ArchivoBlack';
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.428571px;
+    text-transform: uppercase;
+    color: #D2132A;
+  }
+
+  &__show {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 30px;
+    position: relative;
+  }
+
+  &__column {
+    overflow: hidden;
+
+    &:nth-child(even) {
+      padding-top: 43px;
+    }
+  }
+
+  .decor {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: 23s infinite alternate swim;
+  }
+
+  .youtube {
+    background-image: url('../images/decor/youtube.png');
+    width: 61px;
+    height: 50px;
+    right: -37px;
+    top: 40%;
+    animation-delay: 8s;
+  }
+
+  .ball {
+    background-image: url('../images/decor/ball.png');
+    width: 48px;
+    height: 49px;
+    bottom: 110px;
+    left: -30px;
+    animation-delay: 3.5s;
+  }
+
+  .torus {
+    background-image: url('../images/decor/torus.png');
+    width: 76px;
+    height: 78px;
+    top: -40px;
+    left: -50px;
+    animation-delay: 5.5s;
+  }
+}

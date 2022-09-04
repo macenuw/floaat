@@ -1,0 +1,20 @@
+.team {
+  background-color: #FFECEE;
+  padding: 86px 0 86px;
+
+  .header__btn {
+    color: black;
+  }
+
+  &__content {}
+
+  &__title {
+    margin-bottom: 52px;
+    font-family: 'ArchivoBlack';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #383030;
+  }
+}

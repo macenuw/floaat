@@ -1,0 +1,82 @@
+body {
+  font-family: 'Archivo';
+  font-style: normal;
+  background-color: white;
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: none;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  perspective: 500px;
+  background-color: #18021A;
+}
+
+.last-block {
+  min-height: 100vh;
+  z-index: 20;
+}
+
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/tabs/decore.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+
+  &__loading {
+    font-size: 370px;
+    line-height: 434px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(100, 60, 90, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+    width: 50%;
+    height: 50%;
+  }
+
+  &__img-inner {
+    z-index: 10;
+    max-width: 240px;
+    height: 240px;
+    display: none;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #F9A608;
+  }
+}

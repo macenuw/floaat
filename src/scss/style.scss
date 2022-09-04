@@ -1,0 +1,21 @@
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/libs';
+@import 'global/vars';
+@import 'global/global';
+
+
+
+@import 'blocks/header.scss';
+@import 'blocks/top-section.scss';
+@import 'blocks/clients.scss';
+@import 'blocks/do.scss';
+@import 'blocks/team.scss';
+@import 'blocks/footer.scss';
+
+
+
+@import 'components/cursor.scss';
+@import 'components/logo.scss';
+@import 'components/client.scss';
+@import 'components/slider.scss';

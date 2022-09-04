@@ -1,0 +1,41 @@
+.header {
+  padding-top: 39px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: none;
+    text-transform: uppercase;
+    z-index: 5;
+    pointer-events: all;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &--menu {
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/menu-btn.png');
+      background-repeat: no-repeat;
+    }
+  }
+}
