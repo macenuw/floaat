@@ -5,7 +5,7 @@ function cursor() {
   const clientHeight = document.documentElement.clientHeight;
   const clientWidth = document.documentElement.clientWidth;
   wrapper.addEventListener('mouseover', () => {
-    cursor.style.backgroundImage = 'url("../images/cursore-bg.png")'
+    cursor.style.backgroundImage = 'url("./images/cursore-bg.png")'
   })
   wrapper.addEventListener('mouseout', () => {
     cursor.style.backgroundImage = 'none';
