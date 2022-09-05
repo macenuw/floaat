@@ -9,6 +9,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-image: url('../images/cursore-bg.png');
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    background-size: 35%;
 
     @media (max-width:992px) {
       padding: 100px 0;
@@ -114,6 +118,7 @@
     background-size: cover;
     min-height: 384px;
     display: none;
+    position: relative;
 
     &.active {
       display: flex;
@@ -142,6 +147,40 @@
 
   #headphone-info {
     background-image: url('../images/tabs/headphone.png')
+  }
+
+  &__decor {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: 16s infinite alternate swim;
+
+    &--ball {
+      background-image: url('../images/tabs/decor1.png');
+      width: 22px;
+      height: 22px;
+      left: 10%;
+      top: 10%;
+      animation-delay: 3.5s;
+    }
+
+    &--shadow {
+      background-image: url('../images/tabs/decor2.png');
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 50%;
+      animation-delay: 1.5s;
+    }
+
+    &--heart {
+      background-image: url('../images/tabs/decor2.png');
+      width: 80px;
+      height: 80px;
+      left: 10%;
+      bottom: 10%;
+    }
   }
 
   &__subtitle {
