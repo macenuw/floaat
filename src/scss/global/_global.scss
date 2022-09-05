@@ -23,8 +23,17 @@ body {
 }
 
 .last-block {
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
   z-index: 20;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .preloader {

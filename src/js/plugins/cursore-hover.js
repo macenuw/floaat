@@ -21,39 +21,39 @@ function cursorHover() {
     btn.addEventListener('mouseover', () => {
       if (!btn.classList.contains('header__btn--menu')) {
         cursor.textContent = 'contact us';
-        cursor.style.width = '80px';
-        cursor.style.height = '80px'
+        cursor.style.minWidth = '80px';
+        cursor.style.minHeight = '80px'
       } else if (btn.classList.contains('header__btn--menu')) {
         cursor.textContent = 'open';
-        cursor.style.width = '80px';
-        cursor.style.height = '80px'
+        cursor.style.minWidth = '80px';
+        cursor.style.minHeight = '80px'
       }
     });
     btn.addEventListener('mouseout', () => {
       cursor.textContent = '';
-      cursor.style.width = '10px';
-      cursor.style.height = '10px';
+      cursor.style.minWidth = '10px';
+      cursor.style.minHeight = '10px';
     })
   })
   prev.addEventListener('mouseover', () => {
     cursor.textContent = 'prev';
-    cursor.style.width = '80px';
-    cursor.style.height = '80px'
+    cursor.style.minWidth = '80px';
+    cursor.style.minHeight = '80px'
   });
   prev.addEventListener('mouseout', () => {
     cursor.textContent = '';
-    cursor.style.width = '10px';
-    cursor.style.height = '10px';
+    cursor.style.minWidth = '10px';
+    cursor.style.minHeight = '10px';
   })
   next.addEventListener('mouseover', () => {
     cursor.textContent = 'next';
-    cursor.style.width = '80px';
-    cursor.style.height = '80px'
+    cursor.style.minWidth = '80px';
+    cursor.style.minHeight = '80px'
   });
   next.addEventListener('mouseout', () => {
     cursor.textContent = '';
-    cursor.style.width = '10px';
-    cursor.style.height = '10px';
+    cursor.style.minWidth = '10px';
+    cursor.style.minHeight = '10px';
   })
 };
 export default cursorHover;

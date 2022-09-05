@@ -3,7 +3,16 @@
   background-color: #FFECEE;
   padding: 70px 0;
   z-index: 10;
-  overflow: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   .header__btn {
     color: black;
@@ -11,6 +20,7 @@
 
   &__content {
     display: flex;
+
 
     @media (max-width:992px) {
       flex-direction: column;
