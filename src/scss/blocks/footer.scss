@@ -54,11 +54,15 @@
   }
 
   &__date,
-  &__made {
+  &__made,
+  &__link {
     font-weight: 700;
     font-size: 12px;
     line-height: 26px;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: none;
   }
+
+  &__link {}
 }
